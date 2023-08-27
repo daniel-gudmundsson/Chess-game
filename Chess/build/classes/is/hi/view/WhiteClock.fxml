@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Label fx:id="chessClock" layoutX="800.0" layoutY="439.0" prefHeight="51.0" prefWidth="113.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="is.hi.view.WhiteClockController">
+   <font>
+      <Font size="30.0" />
+   </font>
+</Label>

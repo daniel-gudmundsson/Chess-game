@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" fx:id="languageDialog" prefHeight="190.0" prefWidth="445.0" visible="false" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="is.hi.view.LanguageController">
+   <children>
+      <Label layoutX="127.0" layoutY="58.0" prefHeight="17.0" prefWidth="192.0" text="Choose language / Veldu tungumál" />
+      <RadioButton fx:id="english" layoutX="84.0" layoutY="103.0" mnemonicParsing="false" onAction="#languageHandler" text="English">
+         <toggleGroup>
+            <ToggleGroup fx:id="engIs" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="icelandic" layoutX="245.0" layoutY="103.0" mnemonicParsing="false" onAction="#languageHandler" text="Íslenska" toggleGroup="$engIs" />
+   </children>
+</AnchorPane>

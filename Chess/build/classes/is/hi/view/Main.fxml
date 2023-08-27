@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import is.hi.view.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="is.hi.view.MainController">
+   
+    <children>
+       <ChessTable fx:id="chessTable" prefHeight="668.0" prefWidth="386.0">
+           <children>
+      <Canvas fx:id="canvas" height="700.0" layoutY="-1.0" width="800.0" />
+      </children></ChessTable>
+      <fx:include fx:id="chessDialog" source="ChessDialog.fxml" />
+      <fx:include fx:id="menu" source="Menu.fxml" />
+      <fx:include fx:id="language" source="Language.fxml" />
+      <fx:include fx:id="blackClock" source="BlackClock.fxml" />
+      <fx:include fx:id="whiteClock" source="WhiteClock.fxml" />
+      <Label layoutX="20.0" layoutY="77.0" text="8" />
+      <Label layoutX="20.0" layoutY="152.0" text="7" />
+      <Label layoutX="20.0" layoutY="227.0" text="6" />
+      <Label layoutX="20.0" layoutY="302.0" text="5" />
+      <Label layoutX="20.0" layoutY="377.0" text="4" />
+      <Label layoutX="20.0" layoutY="452.0" text="3" />
+      <Label layoutX="20.0" layoutY="527.0" text="2" />
+      <Label layoutX="20.0" layoutY="602.0" text="1" />
+      <Label layoutX="79.0" layoutY="648.0" text="a" />
+      <Label layoutX="154.0" layoutY="648.0" text="b" />
+      <Label layoutX="229.0" layoutY="648.0" text="c" />
+      <Label layoutX="304.0" layoutY="648.0" text="d" />
+      <Label layoutX="379.0" layoutY="648.0" text="e" />
+      <Label layoutX="454.0" layoutY="648.0" text="f" />
+      <Label layoutX="529.0" layoutY="648.0" text="g" />
+      <Label layoutX="604.0" layoutY="648.0" text="h" />
+      <RadioButton fx:id="whiteRadio" layoutX="763.0" layoutY="369.0" mnemonicParsing="false" onAction="#choosePlayerHandler">
+         <toggleGroup>
+            <ToggleGroup fx:id="players" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="blackRadio" layoutX="763.0" layoutY="302.0" mnemonicParsing="false" onAction="#choosePlayerHandler" toggleGroup="$players" />
+      <ToggleButton fx:id="musicButton" layoutX="784.0" layoutY="45.0" mnemonicParsing="false" onAction="#musicHandler" text="Music on/off" />
+      <Label fx:id="errorMessage" layoutX="652.0" layoutY="523.0" prefHeight="146.0" prefWidth="256.0" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      
+   </children>
+</AnchorPane>
